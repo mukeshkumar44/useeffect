@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import ApiCall from './components/ApiCall';
+import DependentState from './components/DependentState';
+import CountdownTimer from './components/CountdownTimer';
+import InputDebounce from './components/InputDebounce';
+import ThemeToggle from './components/ThemeToggle';
+import ScrollPosition from './components/ScrollPosition';
+import Visibility from './components/Visibility';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ApiCall/>
+      <DependentState/>
+      <CountdownTimer/>
+      <InputDebounce/>
+      <ThemeToggle/>
+      <ScrollPosition/>
+      <Visibility/>
+
     </div>
   );
 }
